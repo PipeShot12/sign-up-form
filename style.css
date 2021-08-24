@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+
+    --Blue: hsl(248, 32%, 49%);
+
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:  'Poppins', sans-serif;
+    background-image: url("./images/bg-intro-mobile.png");
+    background-color: var(--Red);
+    background-blend-mode: multiply;
+    color: white;
+
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    padding: 20% 7%;
+  
+}
+.text > h1{
+    text-align: center;
+    font-size: 1.8em;
+}
+.text > p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 20%;
+}
+.banner{
+    background-color: var(--Blue);
+    border-radius: .5em .5em .5em .5em;
+    padding: 2% 21%;
+    box-shadow: 0px 0.5em 0.1em 0em rgba(0, 0, 0, 0.25);
+    margin-bottom: 10%;
+}
+
+.banner > h2{
+    font-size: 1em;
+    text-align: center;
+}
+.banner > h2 > span{
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+form{
+    border-radius: .5em .5em .5em .5em;
+    background-color: white;
+    padding: 8% 6% ;
+    box-shadow: 0px 0.5em 0.1em 0em rgba(0, 0, 0, 0.25);
+}
+div > input[type='text'], input[type='password'], input[type='email']{
+    outline: none;
+    width: 100%;
+    border: 1.9px solid var(--Grayish-Blue);
+    border-radius: .3em .3em .3em .3em;
+    padding: 6% 5%;
+    font-size: 0.9375em;
+    
+}
+div > input::placeholder{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+input[type='text'], input[type='password']{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.first-name, .last-name, .email , .password{
+    margin-bottom: 5%;
+    position: relative;
+}
+form > button{
+    background-color: var(--Green);
+    border-radius: .5em .5em .5em .5em;
+    padding: 8% 0;
+    width: 100%;
+    box-shadow: 0px 0.4em 0.1em 0em hsla(154, 58%, 36%, 0.808);
+    margin-bottom: 10%;
+    border: none;
+    outline: none;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+    cursor: pointer;
+}
+form > p{
+    color: var(--Grayish-Blue);
+    font-size: 0.7em;
+    text-align: center;
+    margin: 0;
+    margin-top: 7%;
+    padding: 0 4%;
+}
+form > p > span{
+    color: var(--Red);
+    font-weight: bold;
+  
+}
+i{
+    color: var(--Red);
+    margin: 0;
+    padding: 0;
+}
+.icon-first, .icon-last, .icon-email, .icon-password{
+    display: none;
+    position: absolute;
+    right: 0.85em;
+    top: 0.85em;
+}
+.error{
+    color: var(--Red);
+    font-size: 0.7em;
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-weight: 500;
+    margin-top: 1%;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    box-shadow: 0 0 0 50px white inset;
+}
+
+@media(min-width:700px){
+    html {
+        height: 100%;
+      }
+      body {
+        min-height: 100%;
+      }
+
+    body{
+        background-image: none;
+        background-color: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('./images/bg-intro-desktop.png');
+    }
+    main{
+        display: flex;
+        width: 75%;
+        padding: 0% 0%;
+    }
+    .text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text > h1{
+        text-align: left;
+        font-size: 2.5em;
+        margin: 0;
+    }
+    .text > p {
+        text-align: left;
+        font-size: 0.85em;
+        margin-bottom: 0%;
+        line-height: 2;
+    }
+    .form-and-banner{
+        width: 50%;
+    }
+    
+    .banner{
+        padding: 1% 1%;
+        margin-bottom: 5%;
+    }
+    div > input[type='text'], input[type='password']{
+        outline: none;
+        width: 100%;
+        border: 1.9px solid var(--Grayish-Blue);
+        border-radius: .3em .3em .3em .3em;
+        padding: 3% 6%;
+        font-size: 0.875em
+        
+    }
+
+    form > button{
+       
+        padding: 4% 0;
+        width: 100%;
+    }
+    .error{
+        margin-top: 0%;
+    }
+    .attribution{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
