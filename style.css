@@ -116,8 +116,8 @@ i{
 .icon-first, .icon-last, .icon-email, .icon-password{
     display: none;
     position: absolute;
-    right: 0.85em;
-    top: 0.85em;
+    right: 0.9em;
+    top: 1.2em;
 }
 .error{
     color: var(--Red);
@@ -150,6 +150,7 @@ input:-webkit-autofill:active{
         justify-content: center;
         align-items: center;
         background-image: url('./images/bg-intro-desktop.png');
+        background-size: 100vh 100vh;
     }
     main{
         display: flex;
@@ -164,12 +165,12 @@ input:-webkit-autofill:active{
     }
     .text > h1{
         text-align: left;
-        font-size: 2.5em;
+        font-size: 4.55vh;
         margin: 0;
     }
     .text > p {
         text-align: left;
-        font-size: 0.85em;
+        font-size: 1.55vh;
         margin-bottom: 0%;
         line-height: 2;
     }
@@ -180,29 +181,66 @@ input:-webkit-autofill:active{
     .banner{
         padding: 1% 1%;
         margin-bottom: 5%;
+        box-shadow: 0px  0.9vh 0.19vh 0em rgba(0, 0, 0, 0.25);
+        border-radius: 0.9vh 0.9vh 0.9vh 0.9vh;
+    }
+    .banner > h2{
+        font-size: 1.9vh;
+        text-align: center;
     }
     div > input[type='text'], input[type='password']{
         outline: none;
         width: 100%;
         border: 1.9px solid var(--Grayish-Blue);
-        border-radius: .3em .3em .3em .3em;
+        border-radius: 0.9vh 0.9vh 0.9vh 0.9vh;
         padding: 3% 6%;
-        font-size: 0.875em
+        font-size: 1.6vh
         
     }
-
+    form{
+        box-shadow: 0px  0.9vh 0.19vh 0em rgba(0, 0, 0, 0.25);
+        border-radius: 0.9vh 0.9vh 0.9vh 0.9vh;
+    }
     form > button{
-       
+        border-radius: 0.9vh 0.9vh 0.9vh 0.9vh;
         padding: 4% 0;
         width: 100%;
     }
+    .first-name, .last-name, .email , .password{
+        margin-bottom: 2.5vh;
+        position: relative;
+    }
+  
+    form > button{
+        box-shadow: 0px 0.7vh 0.19vh 0em hsla(154, 58%, 36%, 0.808);
+        font-size: 1.5vh;
+    }
+    form > p{
+        font-size: 1.27vh;
+    }
+    form > p > span{
+        color: var(--Red);
+        font-weight: bold;
+      
+    }
+    .icon-first, .icon-last, .icon-email, .icon-password{
+        display: none;
+        position: absolute;
+        right: 1.5vh;
+        top: 1.5vh;
+    }
+    i{
+        font-size: 2.2vh;
+    }
     .error{
         margin-top: 0%;
+        font-size: 1.27vh
     }
     .attribution{
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+        font-size: 1.25vh;
     }
 }
